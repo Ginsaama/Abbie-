@@ -1,0 +1,164 @@
+body{
+    margin: 0;
+    background-color: #ffefce;
+    overflow: hidden;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px 0 50px;
+    min-height: 100vh;
+}
+.background{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(assets/images/swatch.png);
+    background-size: contain;
+}
+/* Navbar Stuff */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    margin: 0 0 0 1rem;
+}
+.logo h1{
+    font-family: 'Comic Neue';
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #CC8EAC;
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+    margin-right: 3%;
+}
+.navbar li{
+    margin: 0 1rem;
+    font-family: 'Comic Neue';
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #CC8EAC;
+}
+/* Background Images */
+.bg3 {
+    position: absolute; /* Removes the images from the normal document flow */
+    top: 16rem; /* Adjust position as needed */
+    left: 2rem; /* Adjust position as needed */
+    width: 100%; /* Make sure images cover the desired area */
+    height: 100%; /* Make sure images cover the desired area */
+    z-index: -1; /* Places the images behind other content */
+    opacity: 0.3; /* Optional: Adjusts the opacity of the images */
+}
+.bg3 img{
+    width: 30rem;
+    height: auto;
+}
+.bg1{
+    position: absolute; /* Removes the images from the normal document flow */
+    top: 10rem; /* Adjust position as needed */
+    left: 25rem; /* Adjust position as needed */
+    width: 30px; /* Make sure images cover the desired area */
+    height: 30px; /* Make sure images cover the desired area */
+    z-index: -1; /* Places the images behind other content */
+    opacity: 0.3; /* Optional: Adjusts the opacity of the images */
+}
+.bg1 img{
+    width: 40rem;
+    height: auto;
+}
+.bg2{
+    position: absolute; /* Removes the images from the normal document flow */
+    top: 15rem; /* Adjust position as needed */
+    left: 65rem; /* Adjust position as needed */
+    width: 30px; /* Make sure images cover the desired area */
+    height: 30px; /* Make sure images cover the desired area */
+    z-index: -1; /* Places the images behind other content */
+    opacity: 0.3; /* Optional: Adjusts the opacity of the images */
+}
+.bg2 img{
+    width: 25rem;
+    height: auto;
+}
+/* Main */
+main{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    text-align: center; /* Center text within the main element */
+}
+.title h1{
+    margin: 3rem 0 0 0;
+    font-family: 'Poppins';
+    font-size: 8rem;
+    font-weight: 700;
+    color: #CC8EAC;
+}
+.subtitle{
+    display: flex;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    text-align: center;
+
+}
+.subtitle p{
+    margin: 0;
+    height: auto;
+    width: 70%;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+/* Footer */
+
+.foot {
+    display: flex;
+    justify-content: space-between; /* Space out items */
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+}
+
+.foot h3, .foot p {
+    font-family: "Poppins";
+}
+.foot p{
+    margin-right: 2rem;
+}
+
+@media (min-width: 800px) and (max-width: 1350px) {
+    .title h1 {
+        font-size: 6rem; /* Adjust font size for medium screens */
+    }
+}
+
+/* Styles for mobile devices (portrait) */
+@media (min-width: 400px) and (max-width: 800px) {
+    .title h1 {
+        font-size: 5rem; /* Adjust font size for smaller screens */
+    }
+
+    .foot p, .foot h3 {
+        display: none; /* Hide footer text on smaller screens */
+    }
+
+    .navbar ul {
+        display: none; /* Hide navbar links on smaller screens */
+    }
+}
+
+/* Styles for very small screens (e.g., mobile phones) */
+@media (max-width: 400px) {
+    .title h1 {
+        font-size: 3rem; /* Adjust font size for very small screens */
+    }
+
+    .foot p, .foot h3 {
+        display: none; /* Hide footer text on very small screens */
+    }
+
+    .navbar ul {
+        display: none; /* Hide navbar links on very small screens */
+    }
+}
