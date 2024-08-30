@@ -1,6 +1,8 @@
 body{
     margin: 0;
     background-color: #ffefce;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(assets/images/swatch.png);
+    background-size: contain;
     overflow: hidden;
 }
 .container{
@@ -8,10 +10,6 @@ body{
     flex-direction: column;
     margin: 0 50px 0 50px;
     min-height: 100vh;
-}
-.background{
-    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(assets/images/swatch.png);
-    background-size: contain;
 }
 /* Navbar Stuff */
 .navbar{
@@ -134,7 +132,13 @@ main{
 }
 
 /* Styles for mobile devices (portrait) */
-@media (min-width: 400px) and (max-width: 800px) {
+@media (min-width: 600px) and (max-width: 800px) {
+    .container{
+        display: flex;
+        align-items: center; /* Center horizontally */
+        justify-content: center; /* Center vertically */
+        text-align: center;
+    }
     .title h1 {
         font-size: 5rem; /* Adjust font size for smaller screens */
     }
@@ -149,9 +153,18 @@ main{
 }
 
 /* Styles for very small screens (e.g., mobile phones) */
-@media (max-width: 400px) {
-    .title h1 {
-        font-size: 3rem; /* Adjust font size for very small screens */
+@media (max-width: 600px) {
+    .container{
+        display: flex;
+        align-items: center; /* Center horizontally */
+        justify-content: center; /* Center vertically */
+        text-align: center;
+    }
+    .title h1{
+        font-size: 4rem; /* Adjust font size for very small screens */
+    }
+    .subtitle p{
+        font-size: 1rem;
     }
 
     .foot p, .foot h3 {
