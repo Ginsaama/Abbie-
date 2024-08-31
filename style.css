@@ -160,6 +160,15 @@ footer{
     footer{
         display: none;
     }
+    .bg1{
+        top: 20rem;
+        right: 1rem;
+    }
+    .bg1 img{
+        width: 30rem;
+        height: auto;
+        
+    }
 
 }
 
