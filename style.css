@@ -134,14 +134,16 @@ main{
     font-family: "Poppins";
 }
 
-@media (max-width: 425px){
+@media (max-width: 430px){
     .navbar ul{
+        display: none;
+    }
+    .navbar li{
         display: none;
     }
     .title h1 {
         font-size: 6rem; /* Adjust font size for medium screens */
     }
-
     .foot h3, .foot p {
         font-size: 10px;
         font-family: "Poppins";
@@ -149,7 +151,7 @@ main{
 }
 
 
-@media (min-width: 300px) and (max-width:424px){
+@media (min-width: 300px) and (max-width:430px){
     .logo{
         margin: 0;
     }
