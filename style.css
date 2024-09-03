@@ -11,7 +11,7 @@ body{
     padding: 0;
 }
 .background-image{
-    position: relative;
+    position: absolute;
     background-color: #ffefce;
     background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(assets/images/swatch.png);
     background-size: cover;
@@ -173,12 +173,15 @@ footer{
 .foot h3, .foot p {
     font-family: "Poppins";
 }
-@media (min-width: 700px) and (max-width: 1440px){
 
+/* Tablet Sized to small laptop*/
+@media (min-width: 700px) and (max-width: 1440px){
     .bg3 img{
         display: none;
     }
+
 }
+/* Tablet Sized or really large cellphone */
 @media (max-width: 700px) {
     .navbar ul{
         display: none;
@@ -203,7 +206,7 @@ footer{
     }
 
 }
-
+/* Mobile */
 @media (max-width: 430px){
     .content{
     margin-top: 0rem;
@@ -224,9 +227,10 @@ footer{
         font-size: 10px;
         font-family: "Poppins";
     }
+
 }
 
-
+/* Mobile again */
 @media (min-width: 300px) and (max-width:430px){
     .logo{
         margin: 0;
@@ -261,6 +265,17 @@ footer{
         width: 30rem;
         height: auto;
     }
+    .customize h1{
+        font-family: "Poppins";
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    .customize p{
+        font-family: "Poppins";
+        font-size: 1rem;
+        font-weight: 500;
+        width: 100%;
+    }
 }
 /* Styles for mobile devices (portrait) */
 
@@ -283,13 +298,28 @@ footer{
 }
 
 .card {
-    background-color: #ffffff;
+    background-color: #f7f7f7;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     padding: 20px;
     text-align: center; /* Centers text and other content inside the card */
+}
+.card img{
+    width: 10rem;
+    height: 10rem;
+}
+.card-content{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.card-content p, h3{
+    font-family: "Poppins";
+    font-size: 1rem;
+    font-weight: 500;
 }
 .customize{
     display: flex;
@@ -310,3 +340,36 @@ footer{
     font-weight: 500;
     width: 50%;
 }
+
+@media (min-width: 700px) and (max-width: 1440px){
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 430px){
+    .customize h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .customize p{
+        font-size: 10px;
+        text-align: center;
+    }
+}
+@media (min-width: 300px) and (max-width:430px){
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .card{
+        width: 15rem;
+        height: auto;
+    }
+}
+
