@@ -251,7 +251,15 @@ footer{
     justify-content: space-between;
     gap: 10px;
     width: 100vw;
-    background-color: #DCCFFF; /* Replace with your desired color */ /* Optional: Add some padding for better spacing */
+    background: linear-gradient(
+        to bottom right, 
+        #DCCFFF 0%, /* Light Purple */
+        #EDBBFB 24%, /* Soft Pink */
+        #FFA8F7 35%, /* Pinkish */
+        #F48BAC 71%, /* Lighter Red */
+        #ED787C 100%, /* Warm Pink */
+        #FFCED0 100% /* Light Pink */
+    );
     border-radius: 20px; /* Optional: Add rounded corners for a softer look */
     padding: 50px;
 }
