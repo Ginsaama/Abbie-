@@ -174,113 +174,8 @@ footer{
     font-family: "Poppins";
 }
 
-/* Tablet Sized to small laptop*/
-@media (min-width: 700px) and (max-width: 1440px){
-    .bg3 img{
-        display: none;
-    }
-
-}
-/* Tablet Sized or really large cellphone */
-@media (max-width: 700px) {
-    .navbar ul{
-        display: none;
-    }
-    .navbar li{
-        display: none;
-    }
-    .bg2 img, .bg3 img{
-        display: none;
-    }
-    footer{
-        display: none;
-    }
-    .bg1{
-        top: 20rem;
-        right: 1rem;
-    }
-    .bg1 img{
-        width: 30rem;
-        height: auto;
-        
-    }
-
-}
-/* Mobile */
-@media (max-width: 430px){
-    .content{
-    margin-top: 0rem;
-    }
-    .logo h1{
-        margin: 0;
-    }
-    .navbar ul{
-        display: none;
-    }
-    .navbar li{
-        display: none;
-    }
-    .title h1 {
-        font-size: 6rem; /* Adjust font size for medium screens */
-    }
-    .foot h3, .foot p {
-        font-size: 10px;
-        font-family: "Poppins";
-    }
-
-}
-
-/* Mobile again */
-@media (min-width: 300px) and (max-width:430px){
-    .logo{
-        margin: 0;
-    }
-    .navbar ul{
-        display: none;
-    }
-    .content{
-        margin: 0;
-    }
-    .title h1 {
-        /* margin-top: 1rem; */
-        font-size: 5rem; /* Adjust font size for medium screens */
-    }
-    .foot{
-        display: none;
-    }
-    main{
-        margin-top: 4rem;
-    }
-    .subtitle p{
-        margin: 1rem 0 0 0 ;
-        padding: 0;
-        height: auto;
-        width: 100%;
-        text-align: center;
-        font-family: 'Poppins';
-        font-size: 1.4rem;
-        font-weight: 300;
-    }
-    .bg1 img{
-        width: 30rem;
-        height: auto;
-    }
-    .customize h1{
-        font-family: "Poppins";
-        font-size: 1rem;
-        font-weight: 700;
-    }
-    .customize p{
-        font-family: "Poppins";
-        font-size: 1rem;
-        font-weight: 500;
-        width: 100%;
-    }
-}
-/* Styles for mobile devices (portrait) */
 
 /* Second Page */
-/* Assuming this is the parent of the card container */
 .card-wrapper{
     display: flex;
     justify-content: center; /* Centers the container horizontally */
@@ -341,40 +236,20 @@ footer{
     width: 50%;
 }
 
-@media (min-width: 700px) and (max-width: 1220px){
-    .card-container {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-}
-
 @media (max-width: 430px){
-    .customize h1{
-        font-size: 2rem;
-        text-align: center;
-    }
-    .customize p{
-        font-size: 10px;
-        text-align: center;
-    }
+
 }
 @media (min-width: 300px) and (max-width:430px){
-    .card-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-    }
-    .card{
-        width: 15rem;
-        height: auto;
-    }
-}
-/* Contacts */
 
+}
+
+
+/* Contacts */
 .contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
     width: 100vw;
     background-color: #DCCFFF; /* Replace with your desired color */ /* Optional: Add some padding for better spacing */
     border-radius: 20px; /* Optional: Add rounded corners for a softer look */
@@ -389,29 +264,31 @@ footer{
     font-family: "Poppins";
     font-size: 5rem;
 }
-.Contact-us p{
+.socials p{
     font-family: "Poppins";
-    font-size: 2rem;
+    font-size: 1rem;
 }
 .socials{
+    margin-top: 2rem;
     display: flex;
     align-items: center;
     justify-content: baseline;
-    gap: 5px;
 }
 .socials a{
     display: flex;
     align-items: center;
+    padding: 0;
+    margin: 0 10px;
 }
 .socials img{
-    width: 24px;
+    width: 16px;
     height: auto;
 }
 .form-container{
     flex: 1;
     flex-direction: column;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
 }
 .form-contain-img{
     display: flex;
@@ -473,4 +350,156 @@ textarea:focus{
     font-family: "Poppins";
     font-weight: 500;
     font-size: 1.3rem;
+    margin-top: 20px;
 }
+
+
+/* Tablet Sized to small laptop*/
+@media (min-width: 700px) and (max-width: 1220px){
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .img-right img{
+        width: 30rem;
+        height: auto;
+    }
+    .img-right{
+        margin-left: 2rem;
+    }
+}
+/* Tablet Sized or really large cellphone */
+@media (min-width: 700px) and (max-width: 800px) {
+    .navbar ul{
+        display: none;
+    }
+    .navbar li{
+        display: none;
+    }
+    .bg2 img, .bg3 img{
+        display: none;
+    }
+    footer{
+        display: none;
+    }
+    .bg1{
+        top: 20rem;
+        right: 1rem;
+    }
+    .bg1 img{
+        width: 30rem;
+        height: auto;
+    }
+    .img-right{
+        display: none;
+        margin: 0;
+        padding: 0;
+    }
+
+}
+/* Mobile */
+@media (max-width: 430px){
+    .content{
+    margin-top: 0rem;
+    }
+    .logo h1{
+        margin: 0;
+    }
+    .navbar ul{
+        display: none;
+    }
+    .navbar li{
+        display: none;
+    }
+    .title h1 {
+        font-size: 6rem; /* Adjust font size for medium screens */
+    }
+    .foot h3, .foot p {
+        font-size: 10px;
+        font-family: "Poppins";
+    }
+    .customize h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .customize p{
+        font-size: 10px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+}
+
+/* Mobile again */
+@media (min-width: 300px) and (max-width:420px){
+    
+    .logo{
+        margin: 0;
+    }
+    .navbar ul{
+        display: none;
+    }
+    .content{
+        margin: 0;
+    }
+    .title h1 {
+        /* margin-top: 1rem; */
+        font-size: 5rem; /* Adjust font size for medium screens */
+    }
+    .foot{
+        display: none;
+    }
+    main{
+        margin-top: 4rem;
+    }
+    .subtitle p{
+        margin: 1rem 0 0 0 ;
+        padding: 0;
+        height: auto;
+        width: 100%;
+        text-align: center;
+        font-family: 'Poppins';
+        font-size: 1.4rem;
+        font-weight: 300;
+    }
+    .bg1 img{
+        width: 30rem;
+        height: auto;
+    }
+    .customize h1{
+        font-family: "Poppins";
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    .customize p{
+        font-family: "Poppins";
+        font-size: 1rem;
+        font-weight: 500;
+        width: 100%;
+    }
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .card{
+        width: 15rem;
+        height: auto;
+    }
+    .Contact-us h1{
+        font-family: "Poppins";
+        font-size: 2rem;
+    }
+    .socials p{
+        font-family: "Poppins";
+        font-size: 10px;
+    }
+    .form-container{
+        width: 100%;
+    }
+
+}
+/* Styles for mobile devices (portrait) */
