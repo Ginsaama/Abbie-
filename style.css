@@ -341,7 +341,7 @@ footer{
     width: 50%;
 }
 
-@media (min-width: 700px) and (max-width: 1440px){
+@media (min-width: 700px) and (max-width: 1220px){
     .card-container {
         display: flex;
         flex-direction: column;
@@ -372,4 +372,105 @@ footer{
         height: auto;
     }
 }
+/* Contacts */
 
+.contacts {
+    width: 100vw;
+    background-color: #DCCFFF; /* Replace with your desired color */ /* Optional: Add some padding for better spacing */
+    border-radius: 20px; /* Optional: Add rounded corners for a softer look */
+    padding: 50px;
+}
+.Contact-us{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.Contact-us h1{
+    font-family: "Poppins";
+    font-size: 5rem;
+}
+.Contact-us p{
+    font-family: "Poppins";
+    font-size: 2rem;
+}
+.socials{
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    gap: 5px;
+}
+.socials a{
+    display: flex;
+    align-items: center;
+}
+.socials img{
+    width: 24px;
+    height: auto;
+}
+.form-container{
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.form-contain-img{
+    display: flex;
+    align-items: center; /* Align items vertically in the middle */
+    justify-content: space-between; /* Even space between the form and the image */
+    gap: 20px; /* Space between the form and the image */
+}
+.img-right img{
+    width: 40rem;
+    height: auto;
+}
+.img-right{
+    margin-left: 10rem;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.form label{
+    font-family: "Poppins";
+    font-size: 1.5rem;
+    font-weight:300;
+}
+
+.form input{
+    height: 3rem;
+    border: 1px solid gray; /* Change the border color (example: purple) */
+    border-radius: 10px; /* Makes the corners rounded */
+    padding: 5px 10px; /* Adds padding inside the input for better spacing */
+    box-sizing: border-box; /* Ensures the padding and border are included in the width and height */
+    font-size: 16px; /* Sets the font size */
+}
+.form input:focus {
+    outline: none; /* Removes the default outline on focus */
+    border-color: #5a189a; /* Changes border color when focused (example: darker purple) */
+    box-shadow: 0 0 5px rgba(138, 43, 226, 0.5); /* Adds a subtle shadow on focus */
+}
+textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    font-size: 16px;
+    resize: vertical; /* Allows the user to resize the textarea vertically */
+    box-sizing: border-box; /* Ensures padding is included in the width */
+}
+textarea:focus{
+    outline: none; /* Removes the default outline on focus */
+    border-color: #5a189a; /* Changes border color when focused (example: darker purple) */
+    box-shadow: 0 0 5px rgba(138, 43, 226, 0.5); /* Adds a subtle shadow on focus */
+}
+.button-container2 button{
+    border: none;
+    background-color: #D4F182;
+    color: black;
+    border-radius: 1rem;
+    width: 8rem;
+    height: 4rem;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 1.3rem;
+}
